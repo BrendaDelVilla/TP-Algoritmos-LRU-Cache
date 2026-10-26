@@ -40,6 +40,64 @@ El desarrollo se dividió en módulos independientes y una carpeta de biblioteca
 
 /TDA t\_lru\_cache: Archivos .h y .c de la caché con lista simple (Parte 1).
 
+&#x20;\[ struct cache
+
+&#x09;typedef struct {
+
+&#x20;   	 void \*clave;
+
+&#x20;   	 size\_t tamClave;
+
+&#x20;  	 void \*dato;
+
+&#x20;  	 size\_t tamDato;
+
+&#x09; }tCache;
+
+
+
+
+
+&#x20;       typedef struct {
+
+&#x20;  	 tLista lista; // tLista simple
+
+&#x20;  	 int capacidad;
+
+&#x20;  	 int cantidad;
+
+&#x20;  	 int (\*accion)(const void \*, const void \*);		
+
+&#x09; }tLru\_cache;
+
+
+
+
+
+&#x09;tLru\_cache \*crear\_lrucache(int capacidad, int (\*cmp)(const void \*, const void \*));
+
+
+
+&#x09;int agregar\_lrucache(tLru\_cache \*cache, const void \*clave, size\_t tamClave, const void \*dato, size\_t tamDato);
+
+
+
+&#x09;void \*obtener\_lrucache(tLru\_cache \*cache, const void \*clave);
+
+
+
+&#x09;int borrar\_lrucache(tLru\_cache \*cache, const void \*clave);
+
+
+
+&#x09;void vaciar\_lrucache(tLru\_cache \*cache);
+
+
+
+]
+
+
+
 
 
 /TDA t\_lru\_cache2: Archivos .h y .c de la caché con lista doble y árbol binario (Parte 2).
@@ -86,17 +144,17 @@ Compilá y ejecutá.
 
 
 
-\[Brenda Villa] 
+\[Brenda Villa]
 
 
 
-\[Sídney Maribel Gamarro Bravo] 
+\[Sídney Maribel Gamarro Bravo]
 
 
 
-\[Tobias Delmonaco] 
+\[Tobias Delmonaco]
 
 
 
-\[Santiago Ivan Codina] 
+\[Santiago Ivan Codina]
 
