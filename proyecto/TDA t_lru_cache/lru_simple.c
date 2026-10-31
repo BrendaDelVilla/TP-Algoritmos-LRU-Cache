@@ -4,7 +4,12 @@
 
 tLru_cache *crear_lrucache(int capacidad, int (*cmp)(const void *, const void *))
 {
-    tLru_cache *cache = (tLru_cache *)malloc(sizeof(tLru_cache));
+    tLru_cache *cache;
+
+    if (capacidad <= 0 || cmp == NULL)
+        return NULL;
+
+    cache=malloc(sizeof(tLru_cache));
     if (cache == NULL)
         return NULL;
 
@@ -52,7 +57,9 @@ int agregar_lrucache(tLru_cache *cache, const void *clave, size_t tamClave,const
     tCache aux;
     int existe;
 
-    if(!cache || !clave || !dato )
+    if(!cache || !clave || !dato || !cache->accion)
+        return 0;
+    if(cache->capacidad==0)
         return 0;
 
     cc = malloc(sizeof(tCache));// se tiene que reservar memoria para clave y dato
@@ -120,7 +127,7 @@ void *obtener_lrucache(tLru_cache *cache, const void *clave)
     tNodo *actual;
     tCache *info_cache;
 
-    if (!cache || !cache->lista)
+    if (!cache || !cache->lista ||!clave)
         return NULL;
 
     p=&(cache->lista);
@@ -156,7 +163,7 @@ int borrar_lrucache(tLru_cache *cache, const void *clave)
 
     int existe;
 
-    if(!cache || !cache->lista)
+    if(!cache || !cache->lista || !clave)
         return 0;
 
     p=&(cache->lista);
@@ -196,5 +203,6 @@ void vaciar_lrucache(tLru_cache *cache)
     }
     vaciarLista(&(cache->lista));
 
+    cache->lista=NULL;
     cache->cantidad=0;
 }

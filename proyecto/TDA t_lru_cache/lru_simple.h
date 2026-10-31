@@ -2,7 +2,9 @@
 #define LRU_SIMPLE_H_INCLUDED
 
 #include <stddef.h>
-#include "lista.h"
+
+//#include "lista.h"
+#include "../TDA_bases/TDA_Lista_Simple/lista.h"
 
 // struct cache
 typedef struct {
