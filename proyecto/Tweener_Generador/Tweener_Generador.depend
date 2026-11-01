@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1793457617 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\generador_lotes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"generador_lotes.h"
+
+1793457617 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\generador_lotes.h
+	"tweener.h"
+
+1793457617 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\tweener.h
+
+1793457617 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\main_generador.c
+	<stdio.h>
+	<stdlib.h>
+	"generador_lotes.h"
+
