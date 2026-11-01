@@ -10,8 +10,62 @@
 
 1793457617 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\tweener.h
 
-1793457617 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\main_generador.c
+1793550932 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\main_generador.c
 	<stdio.h>
 	<stdlib.h>
 	"generador_lotes.h"
+	"simulador.h"
+
+1793550157 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\simulador.c
+	"simulador.h"
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"../Tweener_Generador/tweener.h"
+	"../Tweener_Generador/generador_lotes.h"
+	"../TDA t_lru_cache/lru_simple.h"
+	"../TDA t_lru_cache_abb/lru_cache_abb.h"
+
+1793550157 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tweener_generador\simulador.h
+	<stdio.h>
+
+1793457617 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda t_lru_cache\lru_simple.h
+	<stddef.h>
+	"../TDA_bases/TDA_Lista_Simple/lista.h"
+
+1793410520 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda_bases\tda_lista_simple\lista.h
+	<stdlib.h>
+	<string.h>
+
+1793410520 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda t_lru_cache_abb\lru_cache_abb.h
+	<stddef.h>
+	"../TDA_bases/TDA_ListaDoble_Dinamica/listaDoble.h"
+	"../TDA_bases/TDA_Arbol_Binario/arbol.h"
+
+1793410520 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda_bases\tda_listadoble_dinamica\listadoble.h
+	<stddef.h>
+
+1793549980 c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda_bases\tda_arbol_binario\arbol.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1793457617 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda t_lru_cache\lru_simple.c
+	"lru_simple.h"
+	<string.h>
+
+1793410520 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda t_lru_cache_abb\lru_cache_abb.c
+	"lru_cache_abb.h"
+
+1793410520 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda_bases\tda_arbol_binario\arbol.c
+	"arbol.h"
+
+1793410520 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda_bases\tda_lista_simple\lista.c
+	"lista.h"
+	<stdio.h>
+
+1793410520 source:c:\users\santi\onedrive\documentos\github\tp-algoritmos-lru-cache\proyecto\tda_bases\tda_listadoble_dinamica\listadoble.c
+	"listaDoble.h"
+	<stdlib.h>
+	<string.h>
 

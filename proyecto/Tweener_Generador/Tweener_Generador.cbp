@@ -30,7 +30,24 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../TDA t_lru_cache" />
+			<Add directory="../TDA t_lru_cache_abb" />
 		</Compiler>
+		<Unit filename="../TDA t_lru_cache/lru_simple.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../TDA t_lru_cache_abb/lru_cache_abb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../TDA_bases/TDA_Arbol_Binario/arbol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../TDA_bases/TDA_ListaDoble_Dinamica/listaDoble.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../TDA_bases/TDA_Lista_Simple/lista.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="generador_lotes.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -38,6 +55,10 @@
 		<Unit filename="main_generador.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="simulador.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="simulador.h" />
 		<Unit filename="tweener.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

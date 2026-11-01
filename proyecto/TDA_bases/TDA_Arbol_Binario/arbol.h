@@ -9,11 +9,12 @@
 #define SIN_MEM -1
 #define DUPLICADO -2
 
-typedef struct sNodo{
-void *dato;
-unsigned tam;
-struct sNodo *der;
-struct sNodo *izq;}tNodoArbol;
+typedef struct sNodoArbol {
+    void *dato;
+    unsigned tam;
+    struct sNodoArbol *der;
+    struct sNodoArbol *izq;
+} tNodoArbol;
 
 typedef tNodoArbol *tArbol;
 
